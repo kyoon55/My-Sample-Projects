@@ -1,0 +1,95 @@
+<!-- 
+IT 207 DL2
+Kyoungjin Yoon
+Lab Assignment 1
+-->
+h2.professional {
+    text-align: right;
+    font-family: "Courier New", Courier, monospace;
+}
+
+div.leftNavigation {
+	background-color: Chartreuse ;
+    position: absolute;
+	height: 712px;
+    width: 200px;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+div.studentName, div.instructorName {
+	background-color: yellow ;
+	height: 100px;
+    width: 500px;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 5px 0;
+}
+div.studentName {
+    position: absolute;
+    left: 210px;
+}
+div.instructorName {
+    position: absolute;
+    left: 710px;
+}
+div.professional {
+    position: absolute;
+}
+
+div.studentName::first-letter, div.instructorName::first-letter, h2.professional::first-letter, div.summary::first-letter, p.introduction::first-letter, div.copyright::first-letter {
+    font-size: 200%;
+}
+div.gradeCalculator {
+    position: absolute;
+    left: 210px;
+    top: 120px;
+    height: 600px;
+    width: 1000px;
+    border: 2px solid black;
+}
+div.copyright {
+	background-color: coral  ;
+	height: 50px;
+    width: 1202px;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 720px;
+}
+p.introduction {
+    text-align: right;
+    font-family: "Courier New", Courier, monospace;
+}
+
+p.description {
+    text-align: center;
+    font-size: 80%;
+}
+
+ul.labPracticum:hover, ul.assignments:visited {
+    color: red;
+}
+ul.labPracticum:link, ul.assignments:link {
+    color:pink;
+}
+ul.labPracticum:visited, ul.assignments:hover {
+    color:yellow;
+}
+p.finalGrade {
+    font-weight: bold;
+    font-size: 200%;
+}
+div.final {
+    height: 200%;
+    width: 50%;
+    position: static;
+    background-color: yellow;
+    border: 10px solid black;
+    margin: auto;
+    text-align: center;
+}
+a.grade {
+    color: #8A2BE2;
+}

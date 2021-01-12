@@ -1,0 +1,186 @@
+/*
+IT 207 DL2 
+Kyoungjin Yoon
+Assignment 2
+*/
+h2.professional {
+    text-align: right;
+    font-family: "Courier New", Courier, monospace;
+}
+
+div.leftNavigation {
+	background-color: Chartreuse ;
+    position: absolute;
+	height: 66%;
+    width: 10.4%;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+div.studentName, div.instructorName {
+	background-color: yellow ;
+	height: 9.3%;
+    width: 26.05%;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 5px 0;
+}
+div.studentName {
+    position: absolute;
+    left: 210px;
+}
+div.instructorName {
+    position: absolute;
+    left: 710px;
+}
+div.professional {
+    position: absolute;
+}
+
+div.studentName::first-letter, div.instructorName::first-letter, h2.professional::first-letter, div.summary::first-letter, p.introduction::first-letter, div.copyright::first-letter {
+    font-size: 200%;
+}
+div.content {
+    position: absolute;
+    left: 210px;
+    top: 120px;
+    height: 55.6%;
+    width: 52.1%;
+    border: 2px solid black;
+}
+div.copyright {
+	background-color: coral  ;
+	height: 6%;
+    width: 62.6%;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 720px;
+}
+p.introduction {
+    text-align: right;
+    font-family: "Courier New", Courier, monospace;
+}
+
+p.description {
+    text-align: center;
+    font-size: 80%;
+}
+
+ul.labPracticum:hover, ul.assignments:visited {
+    color: red;
+}
+ul.labPracticum:link, ul.assignments:link {
+    color:pink;
+}
+ul.labPracticum:visited, ul.assignments:hover {
+    color:yellow;
+}
+
+h1.officeHour {
+    font-size: 150%;
+    text-align: center;
+}
+table.calendar {
+    width: 100%;
+    height: 70%;
+    text-align: center;
+}
+div.calendarTitle {
+    text-align: center;
+    border: 3px solid white; 
+    height: 10%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+div.monthtop {
+    background: lightgreen;
+    text-align: center;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: lightgray;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13%;
+    text-align: center;
+}
+
+
+ul.days {
+    position: absolute;
+    width: 105%;
+    height: 50%;
+    padding: 10px 0;
+    margin: 0;
+    right: -55px;
+    top: 60px;
+}
+.days li {
+    border-style: solid;
+    border-color: white;
+    line-height: 430%;
+    background: lightgray;
+    list-style-type: none;
+    display: inline-block;
+    width: 12.2%;
+    text-align: left;
+    vertical-align: top;
+}
+
+div.register {
+    position: absolute;
+    bottom: 0px;
+}
+
+/*  Hours ***********************************
+******************************************
+*******************************************/
+.weekdaysHours {
+    margin: 0;
+    padding: 10px 0;
+    background-color: lightgray;
+}
+
+.weekdaysHours li {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+}
+div.button {
+    text-align: center;
+}
+ul.daysHours {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    margin: 0;
+    top: 25px;
+    left: 1px;
+}
+
+.daysHours li {
+    border-style: solid;
+    border-color: white;
+    line-height: 350%;
+    background: lightgray;
+    list-style-type: none;
+    display: inline-block;
+    width: 16%;
+    text-align: left;
+    vertical-align: top;
+    height: 40%;
+    padding: 70px 0;
+}

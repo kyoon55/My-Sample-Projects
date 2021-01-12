@@ -1,0 +1,189 @@
+/*
+IT 207 DL2 
+Kyoungjin Yoon
+Lab Practicum 2
+Final
+*/
+h2.professional {
+    text-align: right;
+    font-family: "Courier New", Courier, monospace;
+}
+
+div.leftNavigation {
+	background-color: Chartreuse ;
+    position: absolute;
+	height: 95%;
+    width: 10.4%;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+div.studentName, div.instructorName {
+	background-color: yellow ;
+	height: 9.3%;
+    width: 26.05%;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 5px 0;
+}
+div.studentName {
+    position: absolute;
+    left: 210px;
+}
+div.instructorName {
+    position: absolute;
+    left: 710px;
+}
+div.professional {
+    position: absolute;
+}
+
+div.studentName::first-letter, div.instructorName::first-letter, h2.professional::first-letter, div.summary::first-letter, p.introduction::first-letter, div.copyright::first-letter {
+    font-size: 200%;
+}
+div.content {
+    position: absolute;
+    left: 210px;
+    top: 114px;
+    height: 84.7%;
+    width: 52.1%;
+    border: 2px solid black;
+    background-color: darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div.baby {
+    padding: 70px 0;
+    border: 3px solid green;
+    text-align: center;
+    left: 210px;
+    top: 114px;
+    height: 30%;
+    width: 45%;
+    border: 2px solid black;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+div.copyright {
+	background-color: coral;
+	height: 6%;
+    width: 62.6%;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 991px;
+}
+
+p.description {
+    text-align: center;
+    font-size: 80%;
+}
+
+ul.labPracticum:hover, ul.assignments:visited {
+    color: red;
+}
+ul.labPracticum:link, ul.assignments:link {
+    color:pink;
+}
+ul.labPracticum:visited, ul.assignments:hover {
+    color:yellow;
+}
+div.register {
+    padding: 70px 0;
+    border: 3px solid green;
+    text-align: center;
+    height: 50%;
+    width: 30%;
+    border: 2px solid black;
+    font-family: Impact, Charcoal, sans-serif;
+}
+div.registered {
+    padding: 70px 0;
+    border: 3px solid green;
+    text-align: center;
+    height: 30%;
+    width: 30%;
+    border: 2px solid black;
+    font-family: Impact, Charcoal, sans-serif;
+}
+li.registerDirective {
+    font-size: 100%;
+    background-color: gold;
+    list-style-type: none;
+}
+
+ul.registerul {
+    width: 70%;
+}
+li.loginli {
+    color: white;
+    font-size: 100%;
+    background-color: green;
+    list-style-type: none;
+}
+
+ul.loginul {
+    width: 80%;
+}
+
+li.logoutli {
+    color: white;
+    font-size: 100%;
+    background-color: red;
+    list-style-type: none;
+}
+
+ul.logoutul {
+    width: 80%;
+}
+li.loginFailli {
+    color: white;
+    font-size: 100%;
+    background-color: red;
+    list-style-type: none;
+}
+
+ul.loginFailul {
+    width: 80%;
+}
+div.userHeader {
+    
+   font-family:  Impact, Charcoal, sans-serif;
+    border: 2px solid coral;
+}
+ul.headerFrame {
+    font-size: 180%;
+    padding: 2px 0;
+    width:100%;
+    height: 12%;
+    background-color: lightgray;
+    list-style-type: none;
+        display: inline-block;
+}
+li.headerOne{
+    
+    display: inline;
+    float: center;
+    width:49%;
+
+    text-align: center;
+}
+li.headerTwo{
+    float: right;
+    display: inline;
+    width:49%;
+    text-align: right;
+}
+td {
+    text-align: center;
+}
+div.result {
+    position: absolute;
+    left: 210px;
+    top: 114px;
+    height: 84.7%;
+    width: 52.1%;
+    border: 2px solid black;
+    background-color: darkgray;
+    font-family:  Impact, Charcoal, sans-serif;
+}
