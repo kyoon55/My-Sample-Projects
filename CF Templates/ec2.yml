@@ -1,0 +1,31 @@
+---
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Create EC2 instance if you have and existing VPC, Security Group, ssh keyfile.
+Resources:
+  LaunchMyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      BlockDeviceMappings:
+# Create Root volume with 10GB size      
+        - DeviceName: "/dev/sda1"
+          Ebs:
+            DeleteOnTermination: "true"
+            VolumeType: "gp2"
+            VolumeSize: "10"
+      DisableApiTermination: true
+# Provide AMI ID Like - Ubuntu, RedHat, Amazon Linux etc...
+      ImageId: "ami-024a64a6685d05041"
+      InstanceType: "t2.micro"
+      KeyName: "IndiaSupport"      
+# Assign Public IP to instance
+      NetworkInterfaces: 
+        - AssociatePublicIpAddress: "true"
+          DeviceIndex: "0"
+          GroupSet:
+            - sg-0f220bfd6b2cdac63
+          SubnetId: "subnet-033fe58f46e492f31"
+# Assign one Name to your EC2 Instance          
+      Tags: 
+        - 
+          Key: "Name"
+          Value: "Test-Instance"
